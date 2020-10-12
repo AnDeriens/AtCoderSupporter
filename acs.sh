@@ -4,9 +4,11 @@ set -ue
 
 function usage {
     cat <<EOF
-Usage: atcoder_test test [options] <file> <testcase directory>
-Options:
-  -h  This help
+Usage: acs.sh [subcommand] <file> <testcase directory>
+
+Subcommand:
+  help:  This help
+  test:  Execute test.    
 
 Arguments:
   <file>      Execute <file>
@@ -54,7 +56,7 @@ if [ $# -lt 1 ]; then
 fi
 
 case $1 in
-    "-h")
+    help)
         usage
     ;;
 
