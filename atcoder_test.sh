@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -ue
+
 executefile=$1
 testdir=$2
 
